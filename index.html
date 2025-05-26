@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<img src="ترانزفير الشعار الجديد.png" alt="شعار المتجر" style="display:
+ block; margin-left: auto; margin-right: auto; width: 150px;" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mero14store</title>
+  <meta name="description" content="متجر مختص بشحن الألعاب والبطاقات بأسعار تنافسية وخدمة سريعة" />
+  <meta name="keywords" content="ألعاب, شحن, إلكتروني, بطاقات, ببجي, فري فاير, قنشن" />
+  <meta name="author" content="mero14store" />
+  <meta http-equiv="refresh" content="300" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+</head>
+
+<body>
+    
+    <p style="text-align: center;font-size: 18px;"><b>اهلا وسهلا بك في متجر ميرو ستور الالكتروني</b></p>
+<hr>
+
+    <p style="text-align: right;font-size: 20px">!قم بانشاء طلبك الان ليتم تنفيدة بثواني</p>
+
+
+
+<!-- معلومات التواصل مع الزبون -->
+<div style="margin-top: 20px;">
+  <label for="contactSource">📲 من أين تواصلت معنا؟</label><br>
+  <select id="contactSource" style="padding: 10px; width: 300px;">
+    <option value="">-- اختر منصة التواصل --</option>
+    <option value="واتساب">واتساب</option>
+    <option value="انستاغرام">انستاغرام</option>
+    <option value="تيليجرام">تيليجرام</option>
+    <option value="فيسبوك">فيسبوك</option>
+  </select>
+</div>
+
+<div style="margin-top: 10px;">
+  <label for="contactDetails">📝 طريقة التواصل (رقم، اسم مستخدم...)</label><br>
+  <input type="text" id="contactDetails" placeholder="مثال: 077xxxxxxx أو @username أو الاسم" style="padding: 10px; width: 300px;">
+</div>
+  <p style="text-align: right;font-size: 18px"> يرجى كتابة معلومات التواصل صحيحة حتى نتواصل معك</p>
+
+   
+
+
+<hr>
+
+
+
+ <p style="text-align: right;font-size: 20px">:اختار طلبك</p>
+
+
+
+
+
+
+ <h2>اختر نوع الخدمة أو المنتج:</h2>
+
+<!-- القائمة الرئيسية -->
+<select id="mainCategory" onchange="handleMainCategory()" style="padding: 10px; font-size: 16px; width: 300px;">
+  <option value="">-- اختر من القائمة --</option>
+  <option value="fortnite">فورت نايت</option>
+  <option value="mobileGames">شحن ألعاب الموبايل</option>
+  <option value="generalServices">خدمات عامة</option>
+  <option value="gameCards">بطاقات شحن ألعاب إلكترونية</option>
+  <option value="subscriptions">اشتراكات برامج المشاهدة والألعاب</option>
+  <option value="xboxGames">ألعاب إكسبوكس</option>
+  <option value="socialServices">خدمات برامج التواصل الاجتماعي</option>
+  <option value="mixedGames">شحن ألعاب منوعة (بلاي - Xbox - PC)</option>
+  <option value="socialTopup">شحن برامج التواصل الاجتماعي</option>
+  <option value="googlePlayApps">شراء جميع ألعاب وتطبيقات متجر Google Play</option>
+</select>
+
+<!-- قائمة فورت نايت -->
+<div id="fortniteOptions" style="display: none; margin-top: 20px;">
+  <label for="fortniteSelect">اختر نوع طلبك:</label>
+  <select id="fortniteSelect" onchange="showFortniteSubOptions()" style="padding: 10px; font-size: 16px; width: 300px;">
+    <option value="">-- اختر نوع الطلب --</option>
+    <option value="vbucks">فيبوكس</option>
+    <option value="rareBundles">حزم نادرة غير موجودة بالشوب</option>
+    <option value="itemshop">شراء أشياء الآيتم شوب + بتل باس</option>
+    <option value="shopBundles">حزم فورت نايت آيتم شوب</option>
+  </select>
+</div>
+
+<!-- قائمة عروض الفيبوكس (مع التنسيق الجديد) -->
+<div id="vbucksOffers" style="display: none; margin-top: 20px;">
+  <label for="vbucksSelect">🟦 اختار العرض:</label>
+  <select id="vbucksSelect" style="padding: 10px; font-size: 16px; width: 320px;">
+    <option>.كمية 1,000 فيبوكس 🔵 بسعر 💰 13,000 د.ع</option>
+    <option>.كمية 2,000 فيبوكس 🔵 بسعر 💰 26,000 د.ع</option>
+    <option>.كمية 2,800 فيبوكس 🔵 بسعر 💰 30,000 د.ع</option>
+    <option>.كمية 3,000 فيبوكس 🔵 بسعر 💰 39,000 د.ع</option>
+    <option>.كمية 3,800 فيبوكس 🔵 بسعر 💰 42,000 د.ع</option>
+    <option>.كمية 4,000 فيبوكس 🔵 بسعر 💰 51,000 د.ع</option>
+    <option>.كمية 5,000 فيبوكس 🔵 بسعر 💰 46,000 د.ع</option>
+    <option>.كمية 6,000 فيبوكس 🔵 بسعر 💰 59,000 د.ع</option>
+    <option>.كمية 7,000 فيبوكس 🔵 بسعر 💰 71,000 د.ع</option>
+    <option>.كمية 7,800 فيبوكس 🔵 بسعر 💰 75,000 د.ع</option>
+    <option>.كمية 8,800 فيبوكس 🔵 بسعر 💰 88,000 د.ع</option>
+    <option>.كمية 9,800 فيبوكس 🔵 بسعر 💰 100,000 د.ع</option>
+    <option>.كمية 10,000 فيبوكس 🔵 بسعر 💰 91,000 د.ع</option>
+    <option>.كمية 11,000 فيبوكس 🔵 بسعر 💰 104,000 د.ع</option>
+    <option>.كمية 12,000 فيبوكس 🔵 بسعر 💰 117,000 د.ع</option>
+    <option>.كمية 13,500 فيبوكس 🔵 بسعر 💰 115,000 د.ع</option>
+    <option>.كمية 14,500 فيبوكس 🔵 بسعر 💰 127,000 د.ع</option>
+    <option>.كمية 16,300 فيبوكس 🔵 بسعر 💰 144,000 د.ع</option>
+    <option>.كمية 18,500 فيبوكس 🔵 بسعر 💰 160,000 د.ع</option>
+    <option>.كمية 27,000 فيبوكس 🔵 بسعر 💰 229,000 د.ع</option>
+    <option>.كمية 40,500 فيبوكس 🔵 بسعر 💰 343,000 د.ع</option>
+  </select>
+</div>
+
+<!-- أضف هذا الجزء أسفل قسم vbucksOffers -->
+
+<!-- حقول بيانات الحساب -->
+<div id="accountInfo" style="display: none; margin-top: 20px;">
+  <div style="margin-bottom: 10px;">
+    <label for="email">📧 الإيميل المرتبط بالحساب:</label><br>
+    <input type="text" id="email" placeholder="example@email.com" style="padding: 10px; width: 300px;">
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label for="password">🔒 كلمة السر:</label><br>
+    <input type="text" id="password" placeholder="********" style="padding: 10px; width: 300px;">
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label for="accountType">🎮 نوع الحساب:</label><br>
+    <select id="accountType" style="padding: 10px; width: 300px;">
+      <option value="">-- اختر نوع الحساب --</option>
+      <option value="بلايستيشن">بلايستيشن</option>
+      <option value="إكسبوكس">إكسبوكس</option>
+      <option value="ايبك">ايبك</option>
+      <option value="نيتندو">نيتندو</option>
+    </select>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label for="deviceType">🖥️ نوع الجهاز:</label><br>
+    <select id="deviceType" style="padding: 10px; width: 300px;">
+      <option value="">-- اختر نوع الجهاز --</option>
+      <option value="بلايستيشن">بلايستيشن</option>
+      <option value="إكسبوكس">إكسبوكس</option>
+      <option value="بي سي">بي سي</option>
+      <option value="موبايل">موبايل</option>
+      <option value="نيتندو">نيتندو</option>
+    </select>
+  </div>
+</div>
+
+
+<script>
+  function handleMainCategory() {
+    const selected = document.getElementById("mainCategory").value;
+    const fortniteSection = document.getElementById("fortniteOptions");
+    const vbucksOffers = document.getElementById("vbucksOffers");
+
+    fortniteSection.style.display = (selected === "fortnite") ? "block" : "none";
+    vbucksOffers.style.display = "none"; // إخفاء العروض عند تغيير القسم الرئيسي
+  }
+</script>
+<script>
+  function showFortniteSubOptions() {
+    const selected = document.getElementById("fortniteSelect").value;
+    const vbucksOffers = document.getElementById("vbucksOffers");
+    const accountInfo = document.getElementById("accountInfo");
+
+    vbucksOffers.style.display = (selected === "vbucks") ? "block" : "none";
+
+    // إظهار الحقول عند الخيارات المحددة فقط
+    if (["vbucks", "rareBundles", "shopBundles"].includes(selected)) {
+      accountInfo.style.display = "block";
+    } else {
+      accountInfo.style.display = "none";
+    }
+  }
+</script>
+
+
+<!-- بث مباشر من الكاميرا -->
+<div style="margin-top: 20px; text-align: center;">
+  <p style="font-size: 18px;"><b>📷 التقط صور مباشرة (مثلاً إيصالات دفع متعددة)</b></p>
+
+  <!-- الكاميرا -->
+  <video id="cameraStream" autoplay playsinline width="300" style="border: 2px solid #ccc; border-radius: 10px;"></video>
+  <br><br>
+
+  <!-- زر التقاط الصورة -->
+  <button onclick="capturePhoto()" style="padding: 10px 20px; font-size: 16px;">📸 التقاط الصورة</button>
+  <br><br>
+
+  <!-- الصور الملتقطة -->
+  <div id="photosContainer" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
+</div>
+
+<script>
+  const video = document.getElementById('cameraStream');
+  const photosContainer = document.getElementById('photosContainer');
+
+  // بدء تشغيل الكاميرا
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
+    .then(stream => {
+      video.srcObject = stream;
+    })
+    .catch(err => {
+      alert("تعذر الوصول إلى الكاميرا: " + err.message);
+    });
+
+  // التقاط صورة جديدة وإضافتها إلى القائمة
+  function capturePhoto() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 300;
+    canvas.height = video.videoHeight / (video.videoWidth / 300);
+    const context = canvas.getContext('2d');
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    // عرض الصورة
+    const img = document.createElement('img');
+    img.src = canvas.toDataURL('image/png');
+    img.style.width = '140px';
+    img.style.border = '2px solid #aaa';
+    img.style.borderRadius = '10px';
+
+    photosContainer.appendChild(img);
+  }
+</script>
+<div style="text-align: center; margin-top: 40px;">
+  <button onclick="sendOrder()" style="padding: 12px 24px; font-size: 18px; background-color: #28a745; color: white; border: none; border-radius: 8px;">
+    📤 إرسال الطلب
+  </button>
+</div>
+
+
+
+<script>
+  async function sendOrder() {
+    const platform = document.getElementById("contactSource").value;
+    const contactInfo = document.getElementById("contactDetails").value;
+    const mainCategory = document.getElementById("mainCategory").value;
+
+    if (!platform || !contactInfo || !mainCategory) {
+      alert("يرجى تعبئة جميع الحقول المطلوبة قبل الإرسال.");
+      return;
+    }
+
+    let subDetails = "";
+
+    const fortniteSelectValue = document.getElementById("fortniteSelect").value;
+
+    if (mainCategory === "fortnite") {
+      if (!fortniteSelectValue) {
+        alert("يرجى اختيار نوع طلب فورت نايت.");
+        return;
+      }
+      subDetails += `🎯 نوع طلب فورت نايت: ${fortniteSelectValue}\n`;
+
+      if (fortniteSelectValue === "vbucks") {
+        const vbucksSelectValue = document.getElementById("vbucksSelect").value;
+        if (!vbucksSelectValue) {
+          alert("يرجى اختيار عرض فيبوكس.");
+          return;
+        }
+        subDetails += `💎 عرض فيبوكس: ${vbucksSelectValue}\n`;
+      }
+
+      if (["vbucks", "rareBundles", "shopBundles"].includes(fortniteSelectValue)) {
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const accountType = document.getElementById("accountType").value;
+        const deviceType = document.getElementById("deviceType").value;
+
+        if (!email || !password || !accountType || !deviceType) {
+          alert("يرجى تعبئة جميع بيانات الحساب المطلوبة.");
+          return;
+        }
+
+        subDetails += `📧 الإيميل: ${email}\n🔒 الباسورد: ${password}\n🎮 نوع الحساب: ${accountType}\n🖥️ نوع الجهاز: ${deviceType}\n`;
+      }
+    }
+
+    const token = "7540279666:AAEqscKKhhO2L3lrQkcXxTxht7yjuWEeVVU";
+    const chatId = "54775896";
+
+    const messageText = `📥 طلب جديد:\n\n📲 جهة التواصل: ${platform}\n📝 معلومات التواصل: ${contactInfo}\n🕹️ القسم الرئيسي: ${mainCategory}\n${subDetails}`;
+
+    // إرسال الطلب إلى تيليجرام
+    await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: messageText
+      })
+    });
+
+    // إرسال الصور
+    const images = document.querySelectorAll('#photosContainer img');
+    let index = 1;
+    for (let img of images) {
+      const blob = await (await fetch(img.src)).blob();
+      const formData = new FormData();
+      formData.append('chat_id', chatId);
+      formData.append('caption', `📸 صورة رقم ${index}`);
+      formData.append('photo', blob, `photo${index}.png`);
+
+      await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
+        method: 'POST',
+        body: formData
+      });
+
+      index++;
+    }
+
+    alert("✅ تم إرسال الطلب بنجاح إلى تيليجرام");
+  }
+</script>
