@@ -19,7 +19,7 @@
     <p style="text-align: center;font-size: 18px;"><b>اهلا وسهلا بك في متجر ميرو ستور الالكتروني</b></p>
 <hr>
 
-    <p style="text-align: right;font-size: 20px">!قم بانشاء طلبك الان ليتم تنفيدة بثواني</p>
+    <p style="text-align: right;font-size: 20px">!قم بانشاء طلبك الان ليتم تنفيذة بثواني</p>
 
 
 
@@ -67,9 +67,9 @@
   <option value="subscriptions">اشتراكات برامج المشاهدة والألعاب</option>
   <option value="xboxGames">ألعاب إكسبوكس</option>
   <option value="socialServices">خدمات برامج التواصل الاجتماعي</option>
-  <option value="mixedGames">شحن ألعاب منوعة (بلاي - Xbox - PC)</option>
+  <option value="mixedGames">(بلي - Xbox - PC) شحن ألعاب منوعة </option>
   <option value="socialTopup">شحن برامج التواصل الاجتماعي</option>
-  <option value="googlePlayApps">شراء جميع ألعاب وتطبيقات متجر Google Play</option>
+  <option value="googlePlayApps">Google Play شراء جميع ألعاب وتطبيقات متجر </option>
 </select>
 
 <!-- قائمة فورت نايت -->
@@ -78,13 +78,13 @@
   <select id="fortniteSelect" onchange="showFortniteSubOptions()" style="padding: 10px; font-size: 16px; width: 300px;">
     <option value="">-- اختر نوع الطلب --</option>
     <option value="vbucks">فيبوكس</option>
+       <option value="shopBundles">حزم فورت نايت ايتم شوب</option>
     <option value="rareBundles">حزم نادرة غير موجودة بالشوب</option>
-    <option value="itemshop">شراء أشياء الآيتم شوب + بتل باس</option>
-    <option value="shopBundles">حزم فورت نايت آيتم شوب</option>
+    <option value="itemshop">شراء أشياء الايتم شوب و البتل باس</option>
+ 
   </select>
 </div>
-
-<!-- قائمة عروض الفيبوكس (مع التنسيق الجديد) -->
+<!-- قائمة عروض الفيبوكس  -->
 <div id="vbucksOffers" style="display: none; margin-top: 20px;">
   <label for="vbucksSelect">🟦 اختار العرض:</label>
   <select id="vbucksSelect" style="padding: 10px; font-size: 16px; width: 320px;">
@@ -93,26 +93,66 @@
     <option>.كمية 2,800 فيبوكس 🔵 بسعر 💰 30,000 د.ع</option>
     <option>.كمية 3,000 فيبوكس 🔵 بسعر 💰 39,000 د.ع</option>
     <option>.كمية 3,800 فيبوكس 🔵 بسعر 💰 42,000 د.ع</option>
-    <option>.كمية 4,000 فيبوكس 🔵 بسعر 💰 51,000 د.ع</option>
-    <option>.كمية 5,000 فيبوكس 🔵 بسعر 💰 46,000 د.ع</option>
-    <option>.كمية 6,000 فيبوكس 🔵 بسعر 💰 59,000 د.ع</option>
-    <option>.كمية 7,000 فيبوكس 🔵 بسعر 💰 71,000 د.ع</option>
-    <option>.كمية 7,800 فيبوكس 🔵 بسعر 💰 75,000 د.ع</option>
-    <option>.كمية 8,800 فيبوكس 🔵 بسعر 💰 88,000 د.ع</option>
-    <option>.كمية 9,800 فيبوكس 🔵 بسعر 💰 100,000 د.ع</option>
-    <option>.كمية 10,000 فيبوكس 🔵 بسعر 💰 91,000 د.ع</option>
-    <option>.كمية 11,000 فيبوكس 🔵 بسعر 💰 104,000 د.ع</option>
-    <option>.كمية 12,000 فيبوكس 🔵 بسعر 💰 117,000 د.ع</option>
-    <option>.كمية 13,500 فيبوكس 🔵 بسعر 💰 115,000 د.ع</option>
-    <option>.كمية 14,500 فيبوكس 🔵 بسعر 💰 127,000 د.ع</option>
-    <option>.كمية 16,300 فيبوكس 🔵 بسعر 💰 144,000 د.ع</option>
-    <option>.كمية 18,500 فيبوكس 🔵 بسعر 💰 160,000 د.ع</option>
-    <option>.كمية 27,000 فيبوكس 🔵 بسعر 💰 229,000 د.ع</option>
-    <option>.كمية 40,500 فيبوكس 🔵 بسعر 💰 343,000 د.ع</option>
   </select>
 </div>
+<!-- قائمة عروض الحزم النادرة -->
+<div id="rareBundlesOffers" style="display: none; margin-top: 20px;">
+  <label for="rareBundleSelect">🌟 اختر الحزمة النادرة:</label>
+  <select id="rareBundleSelect" style="padding: 10px; font-size: 16px; width: 320px;">
+    <option value="">-- اختر الحزمة --</option>
+    <option>🎃 The Final Reckoning Pack - 21,000 IQD → 24,000 IQD</option>
+    <option>🥷 Ninja Sarah Pack - 22,000 IQD → 25,000 IQD</option>
+    <option>🎌 Anime Legends Pack - 28,000 IQD → 30,000 IQD</option>
+  </select>
+</div>
+<!-- قائمة عروض حزم فورت نايت ايتم شوب -->
+<div id="shopBundlesOffers" style="display: none; margin-top: 20px;">
+  <label for="shopBundleSelect">🟨 اختر الحزمة:</label>
+  <select id="shopBundleSelect" style="padding: 10px; font-size: 16px; width: 320px;">
+    <option value="">-- اختر الحزمة --</option>
+    <option>💼 حزمة "Dark Reflections" بسعر 💰 45,000 د.ع</option>
+    <option>🔥 حزمة "Inferno's Quest Pack" بسعر 💰 50,000 د.ع</option>
+    <option>🌀 حزمة "Voidlander Pack" بسعر 💰 38,000 د.ع</option>
+    <option>🦴 حزمة "Skull Squad Pack" بسعر 💰 55,000 د.ع</option>
+    <option>🎁 حزمة "Anime Legends" بسعر 💰 60,000 د.ع</option>
+  </select>
+</div>
+<!-- قائمة عروض هدايا الايتم شوب -->
+<div id="itemshopOptions" style="display: none; margin-top: 20px;">
+  <div style="margin-bottom: 10px;">
+    <label for="vbucksItemshop">💰 اختر عرض الفيبوكس:</label><br>
+    <select id="vbucksItemshop" style="padding: 10px; width: 300px;">
+      <option value="">-- اختر عرض فيبوكس --</option>
+      <option>1000 فيبوكس</option>
+      <option>2000 فيبوكس</option>
+      <option>3000 فيبوكس</option>
+      <option>4000 فيبوكس</option>
+      <option>5000 فيبوكس</option>
+    </select>
+  </div>
 
-<!-- أضف هذا الجزء أسفل قسم vbucksOffers -->
+
+<!-- القوائم الخاصه باختيار شراء أشياء الايتم شوب و البتل باس -->
+  <div style="margin-bottom: 10px;">
+    <label for="fortniteUsername">👤 اسم المستخدم في اللعبة:</label><br>
+    <input type="text" id="fortniteUsername" placeholder="ادخل اسمك في اللعبة" style="padding: 10px; width: 300px;">
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label for="wrapSelect">ياحساب ضايفة باللعبة
+    <select id="wrapSelect" style="padding: 10px; width: 300px;">
+      <option value="">-- اختار الحساب
+      <option>Wrap 1</option>
+      <option>Wrap 2</option>
+    </select>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label for="itemName">🎁 اسم الشيء المطلوب شراؤه:</label><br>
+    <input type="text" id="itemName" placeholder="مثال: سكن أو باتل باس" style="padding: 10px; width: 300px;">
+  </div>
+</div>
+
 
 <!-- حقول بيانات الحساب -->
 <div id="accountInfo" style="display: none; margin-top: 20px;">
@@ -162,34 +202,70 @@
   }
 </script>
 <script>
-  function showFortniteSubOptions() {
-    const selected = document.getElementById("fortniteSelect").value;
-    const vbucksOffers = document.getElementById("vbucksOffers");
-    const accountInfo = document.getElementById("accountInfo");
 
-    vbucksOffers.style.display = (selected === "vbucks") ? "block" : "none";
+function showFortniteSubOptions() {
+  const selected = document.getElementById("fortniteSelect").value;
+  const vbucksOffers = document.getElementById("vbucksOffers");
+  const shopBundlesOffers = document.getElementById("shopBundlesOffers");
+  const rareBundlesOffers = document.getElementById("rareBundlesOffers");
+  const accountInfo = document.getElementById("accountInfo");
+  const itemshopOptions = document.getElementById("itemshopOptions");
 
-    // إظهار الحقول عند الخيارات المحددة فقط
-    if (["vbucks", "rareBundles", "shopBundles"].includes(selected)) {
-      accountInfo.style.display = "block";
-    } else {
-      accountInfo.style.display = "none";
-    }
+  vbucksOffers.style.display = (selected === "vbucks") ? "block" : "none";
+  shopBundlesOffers.style.display = (selected === "shopBundles") ? "block" : "none";
+  rareBundlesOffers.style.display = (selected === "rareBundles") ? "block" : "none";
+  itemshopOptions.style.display = (selected === "itemshop") ? "block" : "none";
+
+  if (["vbucks", "rareBundles", "shopBundles"].includes(selected)) {
+    accountInfo.style.display = "block";
+  } else {
+    accountInfo.style.display = "none";
   }
+}
+
 </script>
 
 
 <!-- بث مباشر من الكاميرا -->
 <div style="margin-top: 20px; text-align: center;">
-  <p style="font-size: 18px;"><b>📷 التقط صور مباشرة (مثلاً إيصالات دفع متعددة)</b></p>
+  <p style="font-size: 18px;"><b>📷 التقط صور مباشرة<Br>
+     (صورة الرصيد او سكرين التحويل المالي)</b></p>
 
   <!-- الكاميرا -->
   <video id="cameraStream" autoplay playsinline width="300" style="border: 2px solid #ccc; border-radius: 10px;"></video>
   <br><br>
+ <p>        يجب تصوير الرصيد بشكل حي مباشر يعني
+   مو موجود بموبايل ثاني و تصور لنا الموبايل يظهر فية صورة رصيد </p>
+  <p>في حال الكامرة علقت عندك اضغط زر تحديث الكامرة</p>
+<!-- زر تحديث الكاميرا -->
+<button onclick="restartCamera()" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">🔄 تحديث الكامرة</button>
 
   <!-- زر التقاط الصورة -->
   <button onclick="capturePhoto()" style="padding: 10px 20px; font-size: 16px;">📸 التقاط الصورة</button>
   <br><br>
+<script>
+  let cameraStream = null;
+
+  function startCamera() {
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
+      .then(stream => {
+        cameraStream = stream;
+        video.srcObject = stream;
+      })
+      .catch(err => {
+        alert("تعذر الوصول إلى الكاميرا: " + err.message);
+      });
+  }
+
+  function restartCamera() {
+    if (cameraStream) {
+      cameraStream.getTracks().forEach(track => track.stop());
+    }
+    startCamera();
+  }
+
+  startCamera(); // تشغيل الكاميرا أول مرة
+</script>
 
   <!-- الصور الملتقطة -->
   <div id="photosContainer" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
@@ -200,13 +276,7 @@
   const photosContainer = document.getElementById('photosContainer');
 
   // بدء تشغيل الكاميرا
-  navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
-    .then(stream => {
-      video.srcObject = stream;
-    })
-    .catch(err => {
-      alert("تعذر الوصول إلى الكاميرا: " + err.message);
-    });
+  
 
   // التقاط صورة جديدة وإضافتها إلى القائمة
   function capturePhoto() {
@@ -255,8 +325,43 @@
         return;
       }
       subDetails += `🎯 نوع طلب فورت نايت: ${fortniteSelectValue}\n`;
+      if (fortniteSelectValue === "itemshop") {
+        const vbucksItemshop = document.getElementById("vbucksItemshop").value;
+        const fortniteUsername = document.getElementById("fortniteUsername").value.trim();
+        const wrap = document.getElementById("wrapSelect").value;
+        const itemName = document.getElementById("itemName").value.trim();
 
-      if (fortniteSelectValue === "vbucks") {
+        if (!vbucksItemshop || !fortniteUsername || !wrap || !itemName) {
+          alert("يرجى تعبئة جميع الحقول الخاصة بالآيتم شوب.");
+          return;
+        }
+
+        subDetails += `💰 عرض الفيبوكس: ${vbucksItemshop}\n`;
+        subDetails += `👤 اسم المستخدم: ${fortniteUsername}\n`;
+        subDetails += `🎨 Wrap: ${wrap}\n`;
+        subDetails += `🎁 اسم العنصر: ${itemName}\n`;
+      }
+
+
+      
+      if (fortniteSelectValue === "rareBundles") {
+        const rareBundleValue = document.getElementById("rareBundleSelect").value;
+        if (!rareBundleValue) {
+          alert("يرجى اختيار حزمة نادرة.");
+          return;
+        }
+        subDetails += `🎁 الحزمة النادرة: ${rareBundleValue}\n`;
+      }
+if (fortniteSelectValue === "vbucks") {
+      if (fortniteSelectValue === "shopBundles") {
+        const shopBundleSelectValue = document.getElementById("shopBundleSelect").value;
+        if (!shopBundleSelectValue) {
+          alert("يرجى اختيار حزمة من الآيتم شوب.");
+          return;
+        }
+        subDetails += `📦 حزمة آيتم شوب: ${shopBundleSelectValue}\n`;
+      }
+
         const vbucksSelectValue = document.getElementById("vbucksSelect").value;
         if (!vbucksSelectValue) {
           alert("يرجى اختيار عرض فيبوكس.");
