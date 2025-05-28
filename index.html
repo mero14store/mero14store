@@ -1,206 +1,326 @@
 <!DOCTYPE html>
+
 <html lang="ar">
 <head>
-<img src="ترانزفير الشعار الجديد.png" alt="شعار المتجر" style="display:
- block; margin-left: auto; margin-right: auto; width: 150px;" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mero14store</title>
-  <meta name="description" content="متجر مختص بشحن الألعاب والبطاقات بأسعار تنافسية وخدمة سريعة" />
-  <meta name="keywords" content="ألعاب, شحن, إلكتروني, بطاقات, ببجي, فري فاير, قنشن" />
-  <meta name="author" content="mero14store" />
-  <meta http-equiv="refresh" content="300" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  
+<script charset="UTF-8" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9aC_hNP9tRkVFY2TVzVgrUcmb5RVgRUD4ePV3j7w6RIGZHYr34lbmaE_y-ZpllOLYdr69-XHtSunHHXBbJpjRmX7_l_OxAIFdLme7RxH1vGZXdxorPsJULitTzmWl58dTtdS2sdI0DBr0bEsDKHTE98w6mBct0D7-kmSaBjOrHc_hUzU_fdbPh-ExoflqQj-lbMxMY-b6HBtC0PBL3o3bA1WykoGEDcGUsKaqSK9iKSpE4vHDdJ43rb9HM8hmu6pS2CX-20Jgq8_rFXfvd5qKfeL1Ag3auUjE9FBmy3LAaLsDMByF9tflmCYjC6vySI0hrcerzzhXujkyWu-AtESgK_J7Fc7XC4ql0ZDCudnWqlTE-5W_zxp8Dg7QRknH69l" type="text/javascript">
+function showFloatingNotice(message) {
+  const notice = document.getElementById("floatingNotice");
+  notice.innerText = message;
+  notice.style.display = "block";
+  setTimeout(() => {
+    notice.style.display = "none";
+  }, 3000);
+}
+</script><img alt="شعار المتجر" src="ترانزفير الشعار الجديد.png" style="display:
+ block; margin-left: auto; margin-right: auto; width: 150px;"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>mero14store</title>
+<meta content="متجر مختص بشحن الألعاب والبطاقات بأسعار تنافسية وخدمة سريعة" name="description"/>
+<meta content="ألعاب, شحن, إلكتروني, بطاقات, ببجي, فري فاير, قنشن" name="keywords"/>
+<meta content="mero14store" name="author"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+input[type="text"], select, video, button {
+  max-width: 400px !important;
+  width: 100% !important;
+}
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, label, select, input, button {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .section-box {
+    background: #fff;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+  }
+
+  input[type="text"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+
+  button {
+    background-color: #27ae60;
+    color: white;
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1e8449;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+  }
+
+  marquee {
+    background-color: #e9ecef;
+    color: #2c3e50;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  video {
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+
+  #photosContainer {
+    margin-top: 15px;
+  }
+
+  #photosContainer img {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .red-text {
+    color: #c0392b;
+    font-weight: bold;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+</style>
 </head>
-
 <body>
-    
-    <p style="text-align: center;font-size: 18px;"><b>اهلا وسهلا بك في متجر ميرو ستور الالكتروني</b></p>
-<hr>
+<p style="text-align: center;font-size: 18px;"><b>اهلا وسهلا بك في متجر ميرو ستور الالكتروني</b></p>
+<hr style="margin-top: 20px;" />
 
-    <p style="text-align: right;font-size: 20px">!قم بانشاء طلبك الان ليتم تنفيذة بثواني</p>
-
-
-
+<p style="text-align: right; font-size: 20px; margin-top: -20px;">
+    !قم بانشاء طلبك الان ليتم تنفيذة بثواني
+</p>
 <!-- معلومات التواصل مع الزبون -->
-<div style="margin-top: 20px;">
-  <label for="contactSource">📲 من أين تواصلت معنا؟</label><br>
-  <select id="contactSource" style="padding: 10px; width: 300px;">
-    <option value="">-- اختر منصة التواصل --</option>
-    <option value="واتساب">واتساب</option>
-    <option value="انستاغرام">انستاغرام</option>
-    <option value="تيليجرام">تيليجرام</option>
-    <option value="فيسبوك">فيسبوك</option>
-  </select>
-</div>
-
-<div style="margin-top: 10px;">
-  <label for="contactDetails">📝 طريقة التواصل (رقم، اسم مستخدم...)</label><br>
-  <input type="text" id="contactDetails" placeholder="مثال: 077xxxxxxx أو @username أو الاسم" style="padding: 10px; width: 300px;">
-</div>
-  <p style="text-align: right;font-size: 18px"> يرجى كتابة معلومات التواصل صحيحة حتى نتواصل معك</p>
-
-   
-
-
-<hr>
-
-
-
- <p style="text-align: right;font-size: 20px">:اختار طلبك</p>
-
-
-
-
-
-
- <h2>اختر نوع الخدمة أو المنتج:</h2>
-
-<!-- القائمة الرئيسية -->
-<select id="mainCategory" onchange="handleMainCategory()" style="padding: 10px; font-size: 16px; width: 300px;">
-  <option value="">-- اختر من القائمة --</option>
-  <option value="fortnite">فورت نايت</option>
-  <option value="mobileGames">شحن ألعاب الموبايل</option>
-  <option value="generalServices">خدمات عامة</option>
-  <option value="gameCards">بطاقات شحن ألعاب إلكترونية</option>
-  <option value="subscriptions">اشتراكات برامج المشاهدة والألعاب</option>
-  <option value="xboxGames">ألعاب إكسبوكس</option>
-  <option value="socialServices">خدمات برامج التواصل الاجتماعي</option>
-  <option value="mixedGames">(بلي - Xbox - PC) شحن ألعاب منوعة </option>
-  <option value="socialTopup">شحن برامج التواصل الاجتماعي</option>
-  <option value="googlePlayApps">Google Play شراء جميع ألعاب وتطبيقات متجر </option>
+<div class="form-group">
+  <label for="contactSource">📲 من أين تواصلت معنا؟</label>
+  <select id="contactSource">
+<option value="">-- اختر منصة التواصل --</option>
+<option value="واتساب">واتساب</option>
+<option value="انستاغرام">انستاغرام</option>
+<option value="تيليجرام">تيليجرام</option>
+<option value="فيسبوك">فيسبوك</option>
 </select>
+</div>
+<div class="form-group">
+  <label for="contactDetails">📝 طريقة التواصل (رقم، اسم مستخدم...)</label>
+  <input id="contactDetails" placeholder="مثال: 077xxxxxxx أو @username أو الاسم" type="text"/>
+</div>
+<marquee behavior="scroll" direction="right" scrollamount="5"
+ style="background: #f0f0f0; padding: 10px; color: #333; font-weight: bold; border-radius: 8px; margin-top: 0px;">
+  اكتب معلوماتك بشكل صحيح لنتمكن من التواصل معك
+</marquee>
 
+<hr style="margin-top: -10px;" />
+<p style="text-align: right;font-size: 20px">: اختار طلبك في فورت نايت</p>
 <!-- قائمة فورت نايت -->
-<div id="fortniteOptions" style="display: none; margin-top: 20px;">
-  <label for="fortniteSelect">اختر نوع طلبك:</label>
-  <select id="fortniteSelect" onchange="showFortniteSubOptions()" style="padding: 10px; font-size: 16px; width: 300px;">
-    <option value="">-- اختر نوع الطلب --</option>
-    <option value="vbucks">فيبوكس</option>
-       <option value="shopBundles">حزم فورت نايت ايتم شوب</option>
-    <option value="rareBundles">حزم نادرة غير موجودة بالشوب</option>
-    <option value="itemshop">شراء أشياء الايتم شوب و البتل باس</option>
- 
-  </select>
+<div id="fortniteOptions" style="display: block; margin-top: 20px;">
+<select id="fortniteSelect" onchange="showFortniteSubOptions()" style="padding: 10px; font-size: 16px; width: 300px;">
+<option value="">-- اختر نوع الطلب --</option>
+<option value="vbucks">فيبوكس</option>
+<option value="shopBundles">حزم فورت نايت ايتم شوب</option>
+<option value="rareBundles">حزم نادرة غير موجودة بالشوب</option>
+<option value="itemshop">شراء أشياء الايتم شوب و البتل باس</option>
+</select>
 </div>
 <!-- قائمة عروض الفيبوكس  -->
 <div id="vbucksOffers" style="display: none; margin-top: 20px;">
-  <label for="vbucksSelect">🟦 اختار العرض:</label>
-  <select id="vbucksSelect" style="padding: 10px; font-size: 16px; width: 320px;">
-    <option>.كمية 1,000 فيبوكس 🔵 بسعر 💰 13,000 د.ع</option>
-    <option>.كمية 2,000 فيبوكس 🔵 بسعر 💰 26,000 د.ع</option>
-    <option>.كمية 2,800 فيبوكس 🔵 بسعر 💰 30,000 د.ع</option>
-    <option>.كمية 3,000 فيبوكس 🔵 بسعر 💰 39,000 د.ع</option>
-    <option>.كمية 3,800 فيبوكس 🔵 بسعر 💰 42,000 د.ع</option>
-  </select>
+<label for="vbucksSelect">🟦 اختار العرض:</label>
+<select id="vbucksSelect" style="padding: 10px; font-size: 16px; width: 320px;">
+  <option value="">-- اختر العرض --</option>
+<option>.كمية	1,000	فيبوكس	🔵	بسعر	💰	13,000	د.ع	</option>
+<option>.كمية	2,000	فيبوكس	🔵	بسعر	💰	26,000	د.ع	</option>
+<option>.كمية	2,800	فيبوكس	🔵	بسعر	💰	30,000	د.ع	</option>
+<option>.كمية	3,000	فيبوكس	🔵	بسعر	💰	39,000	د.ع	</option>
+<option>.كمية	3,800	فيبوكس	🔵	بسعر	💰	42,000	د.ع	</option>
+<option>.كمية	4,000	فيبوكس	🔵	بسعر	💰	51,000	د.ع	</option>
+<option>.كمية	5,000	فيبوكس	🔵	بسعر	💰	46,000	د.ع	</option>
+<option>.كمية	6,000	فيبوكس	🔵	بسعر	💰	59,000	د.ع	</option>
+<option>.كمية	7,000	فيبوكس	🔵	بسعر	💰	71,000	د.ع	</option>
+<option>.كمية	7,800	فيبوكس	🔵	بسعر	💰	75,000	د.ع	</option>
+<option>.كمية	8,800	فيبوكس	🔵	بسعر	💰	88,000	د.ع	</option>
+<option>.كمية	9,800	فيبوكس	🔵	بسعر	💰	100,000	د.ع	</option>
+<option>.كمية	10,000	فيبوكس	🔵	بسعر	💰	91,000	د.ع	</option>
+<option>.كمية	11,000	فيبوكس	🔵	بسعر	💰	104,000	د.ع	</option>
+<option>.كمية	12,000	فيبوكس	🔵	بسعر	💰	117,000	د.ع	</option>
+<option>.كمية	13,500	فيبوكس	🔵	بسعر	💰	115,000	د.ع	</option>
+<option>.كمية	14,500	فيبوكس	🔵	بسعر	💰	127,000	د.ع	</option>
+<option>.كمية	16,300	فيبوكس	🔵	بسعر	💰	144,000	د.ع	</option>
+<option>.كمية	18,500	فيبوكس	🔵	بسعر	💰	160,000	د.ع	</option>
+<option>.كمية	27,000	فيبوكس	🔵	بسعر	💰	229,000	د.ع	</option>
+<option>.كمية	40,500	فيبوكس	🔵	بسعر	💰	343,000	د.ع	</option>
+</select>
 </div>
 <!-- قائمة عروض الحزم النادرة -->
 <div id="rareBundlesOffers" style="display: none; margin-top: 20px;">
-  <label for="rareBundleSelect">🌟 اختر الحزمة النادرة:</label>
-  <select id="rareBundleSelect" style="padding: 10px; font-size: 16px; width: 320px;">
-    <option value="">-- اختر الحزمة --</option>
-    <option>🎃 The Final Reckoning Pack - 21,000 IQD → 24,000 IQD</option>
-    <option>🥷 Ninja Sarah Pack - 22,000 IQD → 25,000 IQD</option>
-    <option>🎌 Anime Legends Pack - 28,000 IQD → 30,000 IQD</option>
-  </select>
+<label for="rareBundleSelect">🌟 اختر الحزمة النادرة:</label>
+<select id="rareBundleSelect" style="padding: 10px; font-size: 16px; width: 320px;">
+<option value="">-- اختر الحزمة --</option>
+<option>🎃 The Final Reckoning Pack - 21,000 IQD → 24,000 IQD</option>
+<option>🥷 Ninja Sarah Pack - 22,000 IQD → 25,000 IQD</option>
+<option>🎌 Anime Legends Pack - 28,000 IQD → 30,000 IQD</option>
+</select>
 </div>
 <!-- قائمة عروض حزم فورت نايت ايتم شوب -->
 <div id="shopBundlesOffers" style="display: none; margin-top: 20px;">
-  <label for="shopBundleSelect">🟨 اختر الحزمة:</label>
-  <select id="shopBundleSelect" style="padding: 10px; font-size: 16px; width: 320px;">
-    <option value="">-- اختر الحزمة --</option>
-    <option>💼 حزمة "Dark Reflections" بسعر 💰 45,000 د.ع</option>
-    <option>🔥 حزمة "Inferno's Quest Pack" بسعر 💰 50,000 د.ع</option>
-    <option>🌀 حزمة "Voidlander Pack" بسعر 💰 38,000 د.ع</option>
-    <option>🦴 حزمة "Skull Squad Pack" بسعر 💰 55,000 د.ع</option>
-    <option>🎁 حزمة "Anime Legends" بسعر 💰 60,000 د.ع</option>
-  </select>
+<label for="shopBundleSelect">🟨 اختر الحزمة:</label>
+<select id="shopBundleSelect" style="padding: 10px; font-size: 16px; width: 320px;">
+<option value="">-- اختر الحزمة --</option>
+<option>💼 حزمة "Dark Reflections" بسعر 💰 45,000 د.ع</option>
+<option>🔥 حزمة "Inferno's Quest Pack" بسعر 💰 50,000 د.ع</option>
+<option>🌀 حزمة "Voidlander Pack" بسعر 💰 38,000 د.ع</option>
+<option>🦴 حزمة "Skull Squad Pack" بسعر 💰 55,000 د.ع</option>
+<option>🎁 حزمة "Anime Legends" بسعر 💰 60,000 د.ع</option>
+</select>
 </div>
 <!-- قائمة عروض هدايا الايتم شوب -->
 <div id="itemshopOptions" style="display: none; margin-top: 20px;">
-  <div style="margin-bottom: 10px;">
-    <label for="vbucksItemshop">💰 اختر عرض الفيبوكس:</label><br>
-    <select id="vbucksItemshop" style="padding: 10px; width: 300px;">
-      <option value="">-- اختر عرض فيبوكس --</option>
-      <option>1000 فيبوكس</option>
-      <option>2000 فيبوكس</option>
-      <option>3000 فيبوكس</option>
-      <option>4000 فيبوكس</option>
-      <option>5000 فيبوكس</option>
-    </select>
-  </div>
-
-
-<!-- القوائم الخاصه باختيار شراء أشياء الايتم شوب و البتل باس -->
-  <div style="margin-bottom: 10px;">
-    <label for="fortniteUsername">👤 اسم المستخدم في اللعبة:</label><br>
-    <input type="text" id="fortniteUsername" placeholder="ادخل اسمك في اللعبة" style="padding: 10px; width: 300px;">
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <label for="wrapSelect">ياحساب ضايفة باللعبة
-    <select id="wrapSelect" style="padding: 10px; width: 300px;">
-      <option value="">-- اختار الحساب
-      <option>Wrap 1</option>
-      <option>Wrap 2</option>
-    </select>
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <label for="itemName">🎁 اسم الشيء المطلوب شراؤه:</label><br>
-    <input type="text" id="itemName" placeholder="مثال: سكن أو باتل باس" style="padding: 10px; width: 300px;">
-  </div>
+<div style="margin-bottom: 10px;">
+<label for="vbucksItemshop">💰 اختر عرض الفيبوكس:</label><br/>
+<select id="vbucksItemshop" style="padding: 10px; width: 300px;">
+<option value="">-- اختر عرض فيبوكس --</option>
+<option>1000 فيبوكس</option>
+<option>2000 فيبوكس</option>
+<option>3000 فيبوكس</option>
+<option>4000 فيبوكس</option>
+<option>5000 فيبوكس</option>
+</select>
 </div>
-
-
+<!-- القوائم الخاصه باختيار شراء أشياء الايتم شوب و البتل باس -->
+<div style="margin-bottom: 10px;">
+<label for="fortniteUsername">👤 اسم المستخدم في اللعبة:</label><br/>
+<input id="fortniteUsername" placeholder="ادخل اسمك في اللعبة" style="padding: 10px; width: 300px;" type="text"/>
+</div>
+<div style="margin-bottom: 10px;">
+<label for="wrapSelect">ياحساب ضايفة باللعبة
+    <select id="wrapSelect" style="padding: 10px; width: 300px;">
+<option value="">-- اختار الحساب
+      <option>Wrap 1</option>
+<option>Wrap 2</option>
+</option></select>
+</label></div>
+<div style="margin-bottom: 10px;">
+<label for="itemName">🎁 اسم الشيء المطلوب شراؤه:</label><br/>
+<input id="itemName" placeholder="مثال: سكن أو باتل باس" style="padding: 10px; width: 300px;" type="text"/>
+</div>
+<div style="margin-bottom: 10px;">
+<label for="notes">🗒️ ملاحظات إضافية (اختياري):</label><br/>
+<input id="itemshopNotes" placeholder="اكتب ملاحظتك هنا إن وجدت" style="padding: 10px; width: 300px;" type="text"/>
+</div>
+<p style="text-align: center; color: red; font-size: 18px; margin-top: 20px;">
+  ⚠️ تأكد من صحة المعلومات جيدًا ليتم تنفيذ طلبك بسرعة.
+  </p>
+</div>
 <!-- حقول بيانات الحساب -->
 <div id="accountInfo" style="display: none; margin-top: 20px;">
-  <div style="margin-bottom: 10px;">
-    <label for="email">📧 الإيميل المرتبط بالحساب:</label><br>
-    <input type="text" id="email" placeholder="example@email.com" style="padding: 10px; width: 300px;">
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <label for="password">🔒 كلمة السر:</label><br>
-    <input type="text" id="password" placeholder="********" style="padding: 10px; width: 300px;">
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <label for="accountType">🎮 نوع الحساب:</label><br>
-    <select id="accountType" style="padding: 10px; width: 300px;">
-      <option value="">-- اختر نوع الحساب --</option>
-      <option value="بلايستيشن">بلايستيشن</option>
-      <option value="إكسبوكس">إكسبوكس</option>
-      <option value="ايبك">ايبك</option>
-      <option value="نيتندو">نيتندو</option>
-    </select>
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <label for="deviceType">🖥️ نوع الجهاز:</label><br>
-    <select id="deviceType" style="padding: 10px; width: 300px;">
-      <option value="">-- اختر نوع الجهاز --</option>
-      <option value="بلايستيشن">بلايستيشن</option>
-      <option value="إكسبوكس">إكسبوكس</option>
-      <option value="بي سي">بي سي</option>
-      <option value="موبايل">موبايل</option>
-      <option value="نيتندو">نيتندو</option>
-    </select>
-  </div>
+<div style="margin-bottom: 10px;">
+<label for="email">📧 الإيميل المرتبط بالحساب:</label><br/>
+<input id="email" placeholder="example@email.com" style="padding: 10px; width: 300px;" type="text"/>
 </div>
-
-
-<script>
-  function handleMainCategory() {
-    const selected = document.getElementById("mainCategory").value;
-    const fortniteSection = document.getElementById("fortniteOptions");
-    const vbucksOffers = document.getElementById("vbucksOffers");
-
-    fortniteSection.style.display = (selected === "fortnite") ? "block" : "none";
-    vbucksOffers.style.display = "none"; // إخفاء العروض عند تغيير القسم الرئيسي
-  }
-</script>
+<div style="margin-bottom: 10px;">
+<label for="password">🔒 كلمة السر:</label><br/>
+<input id="password" placeholder="********" style="padding: 10px; width: 300px;" type="text"/>
+</div>
+<div style="margin-bottom: 10px;">
+<label for="accountType">🎮 نوع الحساب:</label><br/>
+<select id="accountType" style="padding: 10px; width: 300px;">
+<option value="">-- اختر نوع الحساب --</option>
+<option value="بلايستيشن">بلايستيشن</option>
+<option value="إكسبوكس">إكسبوكس</option>
+<option value="ايبك">ايبك</option>
+<option value="نيتندو">نيتندو</option>
+</select>
+</div>
+<div style="margin-bottom: 10px;">
+<label for="deviceType">🖥️ نوع الجهاز:</label><br/>
+<select id="deviceType" style="padding: 10px; width: 300px;">
+<option value="">-- اختر نوع الجهاز --</option>
+<option value="بلايستيشن">بلايستيشن</option>
+<option value="إكسبوكس">إكسبوكس</option>
+<option value="بي سي">بي سي</option>
+<option value="موبايل">موبايل</option>
+<option value="نيتندو">نيتندو</option>
+</select>
+</div>
+<div style="margin-bottom: 10px;">
+<label for="notes">🗒️ ملاحظات إضافية (اختياري):</label><br/>
+<input id="accountNotes" placeholder="اكتب ملاحظتك هنا إن وجدت" style="padding: 10px; width: 300px;" type="text"/>
+</div>
+<p style="text-align: center; color: red; font-size: 18px; margin-top: 20px;">
+⚠️ تأكد من صحة المعلومات جيدًا ليتم تنفيذ طلبك بسرعة.
+</p>
+</div>
+<hr/>
 <script>
 
 function showFortniteSubOptions() {
@@ -221,28 +341,62 @@ function showFortniteSubOptions() {
   } else {
     accountInfo.style.display = "none";
   }
+
+  document.getElementById("selectedRequestNotice").style.display = selected ? "block" : "none";
 }
 
-</script>
 
+function showFloatingNotice(message) {
+  const notice = document.getElementById("floatingNotice");
+  notice.innerText = message;
+  notice.style.display = "block";
+  setTimeout(() => {
+    notice.style.display = "none";
+  }, 3000);
+}
+</script>
+<marquee behavior="scroll" direction="right" scrollamount="5"
+  style="background: #f0f0f0; padding: 10px; color: #333; font-weight: bold; border-radius: 8px; margin-top: -20px;">
+   ( رصيد اسيا - رصيد زين - تحويل مالي زين كاش / سوبر كي / Fib / فاست بي ) طرق الدفع التي نستلمها  
+</marquee>
 
 <!-- بث مباشر من الكاميرا -->
-<div style="margin-top: 20px; text-align: center;">
-  <p style="font-size: 18px;"><b>📷 التقط صور مباشرة<Br>
+ <div style="margin-top: -10px;">
+<p style="text-align: right; font-size: 20px; margin-top: 0;">: اختار طريقة الدفع</p>
+  <select id="paymentMethod" style="padding: 10px; width: 300px;">
+    <option value="">-- اختر طريقة الدفع --</option>
+    <option value="رصيد زين">رصيد زين</option>
+    <option value="رصيد اسيا">رصيد اسيا</option>
+    <option value="تحويل مالي زين كاش">تحويل مالي زين كاش</option>
+    <option value="تحويل مالي سوبر كي">تحويل مالي سوبر كي</option>
+    <option value="تحويل مالي فابي">تحويل مالي فابي</option>
+  </select>
+</div>
+
+<div style="margin-top: -10px; text-align: center;">
+<p style="font-size: 18px;"><b>📷 التقط صور مباشرة<br/>
      (صورة الرصيد او سكرين التحويل المالي)</b></p>
 
-  <!-- الكاميرا -->
-  <video id="cameraStream" autoplay playsinline width="300" style="border: 2px solid #ccc; border-radius: 10px;"></video>
-  <br><br>
- <p>        يجب تصوير الرصيد بشكل حي مباشر يعني
-   مو موجود بموبايل ثاني و تصور لنا الموبايل يظهر فية صورة رصيد </p>
-  <p>في حال الكامرة علقت عندك اضغط زر تحديث الكامرة</p>
-<!-- زر تحديث الكاميرا -->
-<button onclick="restartCamera()" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">🔄 تحديث الكامرة</button>
 
-  <!-- زر التقاط الصورة -->
-  <button onclick="capturePhoto()" style="padding: 10px 20px; font-size: 16px;">📸 التقاط الصورة</button>
-  <br><br>
+<!-- زر فتح الكاميرا -->
+<button onclick="startCamera()" style="margin-bottom: 10px; padding: 10px 20px; font-size: 16px;">📷 فتح الكاميرا</button>
+<!-- الكاميرا -->
+<video autoplay="" id="cameraStream" playsinline="" style="border: 2px solid #ccc; border-radius: 10px;" width="300"></video>
+<br/><br/>
+<p style="margin-top: -10px;">في حال الكامرة علقت عندك اضغط زر تحديث الكامرة</p>
+<!-- زر تحديث الكاميرا -->
+<button onclick="restartCamera()" style="margin-top: -10px; padding: 10px 20px; font-size: 16px;">🔄 تحديث الكامرة</button>
+<p>        يجب تصوير الرصيد بشكل حي مباشر يعني
+   مو موجود بموبايل ثاني و تصور لنا الموبايل يظهر فية صورة رصيد </p>
+<!-- زر التقاط الصورة -->
+<button id="captureButton" onclick="handleCaptureClick()" style="margin-top: -10px; padding: 10px 20px; font-size: 16px;">📸 التقاط الصورة</button>
+<br/><br/>
+<p style="margin-top: -10px;">
+  عند الضغط على زر إرسال الطلب سيتم إرسال طلبك ويظهر لك رقم طلبك. يرجى حفظه وإرساله لنا ليتم إخبارك بحالة طلبك أولاً بأول.
+</p>
+<marquee behavior="scroll" direction="right" scrollamount="5" style="background: #f0f0f0; padding: 10px; color: #333; font-weight: bold; border-radius: 8px; margin-top: -10px;">
+  الوقت الافتراضي لإكمال الطلب من دقيقة إلى 59 دقيقة
+</marquee>
 <script>
   let cameraStream = null;
 
@@ -251,6 +405,7 @@ function showFortniteSubOptions() {
       .then(stream => {
         cameraStream = stream;
         video.srcObject = stream;
+        document.getElementById("captureButton").disabled = false;
       })
       .catch(err => {
         alert("تعذر الوصول إلى الكاميرا: " + err.message);
@@ -264,133 +419,274 @@ function showFortniteSubOptions() {
     startCamera();
   }
 
-  startCamera(); // تشغيل الكاميرا أول مرة
+  
+
+function showFloatingNotice(message) {
+  const notice = document.getElementById("floatingNotice");
+  notice.innerText = message;
+  notice.style.display = "block";
+  setTimeout(() => {
+    notice.style.display = "none";
+  }, 3000);
+}
 </script>
-
-  <!-- الصور الملتقطة -->
-  <div id="photosContainer" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
+<!-- الصور الملتقطة -->
+<div id="photosContainer" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
 </div>
-
 <script>
   const video = document.getElementById('cameraStream');
   const photosContainer = document.getElementById('photosContainer');
 
-  // بدء تشغيل الكاميرا
   
+  function handleCaptureClick() {
+    if (!cameraStream) {
+      document.getElementById("customAlert").style.display = "block";
+      return;
+    }
+    capturePhoto();
+  }
 
-  // التقاط صورة جديدة وإضافتها إلى القائمة
   function capturePhoto() {
+
+  if (!cameraStream) {
+    document.getElementById("customAlert").style.display = "block";
+    return;
+  }
+
     const canvas = document.createElement('canvas');
     canvas.width = 300;
     canvas.height = video.videoHeight / (video.videoWidth / 300);
     const context = canvas.getContext('2d');
     context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-    // عرض الصورة
     const img = document.createElement('img');
     img.src = canvas.toDataURL('image/png');
     img.style.width = '140px';
     img.style.border = '2px solid #aaa';
     img.style.borderRadius = '10px';
 
-    photosContainer.appendChild(img);
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'flex';
+    wrapper.style.flexDirection = 'column';
+    wrapper.style.alignItems = 'center';
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = '🗑️ حذف';
+    deleteButton.style.marginTop = '4px';
+    deleteButton.style.backgroundColor = '#e74c3c';
+    deleteButton.style.color = 'white';
+    deleteButton.style.border = 'none';
+    deleteButton.style.fontSize = '12px';
+    deleteButton.style.padding = '4px 8px';
+    deleteButton.style.borderRadius = '6px';
+    deleteButton.style.cursor = 'pointer';
+
+    deleteButton.onclick = () => {
+      wrapper.remove();
+    };
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(deleteButton);
+    photosContainer.appendChild(wrapper);
+  showFloatingNotice("✅ تم التقاط الصورة بنجاح");
   }
+
+function showFloatingNotice(message) {
+  const notice = document.getElementById("floatingNotice");
+  notice.innerText = message;
+  notice.style.display = "block";
+  setTimeout(() => {
+    notice.style.display = "none";
+  }, 3000);
+}
 </script>
-<div style="text-align: center; margin-top: 40px;">
+<div style="text-align: center; position: relative; top: 0px;">
   <button onclick="sendOrder()" style="padding: 12px 24px; font-size: 18px; background-color: #28a745; color: white; border: none; border-radius: 8px;">
     📤 إرسال الطلب
   </button>
 </div>
 
-
-
 <script>
+  function generateOrderId() {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let result = '';
+    for (let i = 0; i < 10; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+  }
+
+  
+  
+  
+  
   async function sendOrder() {
     const platform = document.getElementById("contactSource").value;
     const contactInfo = document.getElementById("contactDetails").value;
-    const mainCategory = document.getElementById("mainCategory").value;
 
-    if (!platform || !contactInfo || !mainCategory) {
-      alert("يرجى تعبئة جميع الحقول المطلوبة قبل الإرسال.");
+    
+    // تمييز الحقول المطلوبة
+    document.getElementById("contactSource").style.border = platform ? "" : "2px solid red";
+    document.getElementById("contactDetails").style.border = contactInfo ? "" : "2px solid red";
+
+    if (!platform || !contactInfo) {
+
+      showCustomAlert("يرجى تعبئة جميع الحقول المطلوبة قبل الإرسال.");
       return;
     }
 
+    const images = document.querySelectorAll('#photosContainer img');
+    
+    document.getElementById("photosContainer").style.outline = images.length > 0 ? "" : "3px solid red";
+    if (images.length === 0) {
+
+      showCustomAlert("يرجى التقاط صورة قبل إرسال الطلب.");
+      return;
+    }
+
+    const orderId = generateOrderId();
+
     let subDetails = "";
 
+const paymentMethod = document.getElementById("paymentMethod").value;
+document.getElementById("paymentMethod").style.border = paymentMethod ? "" : "2px solid red";
+if (!paymentMethod) {
+  showCustomAlert("يرجى اختيار طريقة الدفع.");
+  return;
+}
+subDetails += `💳 طريقة الدفع: ${paymentMethod}\n`;
+
+
     const fortniteSelectValue = document.getElementById("fortniteSelect").value;
+    
+    document.getElementById("fortniteSelect").style.border = fortniteSelectValue ? "" : "2px solid red";
+    if (!fortniteSelectValue) {
 
-    if (mainCategory === "fortnite") {
-      if (!fortniteSelectValue) {
-        alert("يرجى اختيار نوع طلب فورت نايت.");
-        return;
-      }
-      subDetails += `🎯 نوع طلب فورت نايت: ${fortniteSelectValue}\n`;
-      if (fortniteSelectValue === "itemshop") {
-        const vbucksItemshop = document.getElementById("vbucksItemshop").value;
-        const fortniteUsername = document.getElementById("fortniteUsername").value.trim();
-        const wrap = document.getElementById("wrapSelect").value;
-        const itemName = document.getElementById("itemName").value.trim();
+      showCustomAlert("يرجى اختيار نوع الطلب.");
+      return;
+    }
 
-        if (!vbucksItemshop || !fortniteUsername || !wrap || !itemName) {
-          alert("يرجى تعبئة جميع الحقول الخاصة بالآيتم شوب.");
-          return;
-        }
+    subDetails += `🎯 نوع الطلب: ${fortniteSelectValue}
+`;
 
-        subDetails += `💰 عرض الفيبوكس: ${vbucksItemshop}\n`;
-        subDetails += `👤 اسم المستخدم: ${fortniteUsername}\n`;
-        subDetails += `🎨 Wrap: ${wrap}\n`;
-        subDetails += `🎁 اسم العنصر: ${itemName}\n`;
-      }
-
+    if (fortniteSelectValue === "itemshop") {
+      const vbucksItemshop = document.getElementById("vbucksItemshop").value;
+      const fortniteUsername = document.getElementById("fortniteUsername").value.trim();
+      const wrap = document.getElementById("wrapSelect").value;
+      const itemName = document.getElementById("itemName").value.trim();
 
       
-      if (fortniteSelectValue === "rareBundles") {
-        const rareBundleValue = document.getElementById("rareBundleSelect").value;
-        if (!rareBundleValue) {
-          alert("يرجى اختيار حزمة نادرة.");
-          return;
-        }
-        subDetails += `🎁 الحزمة النادرة: ${rareBundleValue}\n`;
-      }
-if (fortniteSelectValue === "vbucks") {
-      if (fortniteSelectValue === "shopBundles") {
-        const shopBundleSelectValue = document.getElementById("shopBundleSelect").value;
-        if (!shopBundleSelectValue) {
-          alert("يرجى اختيار حزمة من الآيتم شوب.");
-          return;
-        }
-        subDetails += `📦 حزمة آيتم شوب: ${shopBundleSelectValue}\n`;
+    document.getElementById("vbucksItemshop").style.border = vbucksItemshop ? "" : "2px solid red";
+    document.getElementById("fortniteUsername").style.border = fortniteUsername ? "" : "2px solid red";
+    document.getElementById("wrapSelect").style.border = wrap ? "" : "2px solid red";
+    document.getElementById("itemName").style.border = itemName ? "" : "2px solid red";
+    if (!vbucksItemshop || !fortniteUsername || !wrap || !itemName) {
+
+        showCustomAlert("يرجى تعبئة جميع الحقول الخاصة بالآيتم شوب.");
+        return;
       }
 
-        const vbucksSelectValue = document.getElementById("vbucksSelect").value;
-        if (!vbucksSelectValue) {
-          alert("يرجى اختيار عرض فيبوكس.");
-          return;
-        }
-        subDetails += `💎 عرض فيبوكس: ${vbucksSelectValue}\n`;
+      subDetails += `💰 عرض الفيبوكس: ${vbucksItemshop}
+`;
+      subDetails += `👤 اسم المستخدم: ${fortniteUsername}
+`;
+      subDetails += `🎨 Wrap: ${wrap}
+`;
+      subDetails += `🎁 اسم العنصر: ${itemName}
+`;
+    }
+
+    if (fortniteSelectValue === "rareBundles") {
+      const rareBundleValue = document.getElementById("rareBundleSelect").value;
+      
+    document.getElementById("rareBundleSelect").style.border = rareBundleValue ? "" : "2px solid red";
+    if (!rareBundleValue) {
+
+        showCustomAlert("يرجى اختيار حزمة نادرة.");
+        return;
+      }
+      subDetails += `🎁 الحزمة النادرة: ${rareBundleValue}
+`;
+    }
+
+    if (fortniteSelectValue === "shopBundles") {
+      const shopBundleSelectValue = document.getElementById("shopBundleSelect").value;
+      
+    document.getElementById("shopBundleSelect").style.border = shopBundleSelectValue ? "" : "2px solid red";
+    if (!shopBundleSelectValue) {
+
+        showCustomAlert("يرجى اختيار حزمة من الآيتم شوب.");
+        return;
+      }
+      subDetails += `📦 حزمة آيتم شوب: ${shopBundleSelectValue}
+`;
+    }
+
+    if (fortniteSelectValue === "vbucks") {
+      const vbucksSelectValue = document.getElementById("vbucksSelect").value;
+      
+    document.getElementById("vbucksSelect").style.border = vbucksSelectValue ? "" : "2px solid red";
+    if (!vbucksSelectValue) {
+
+        showCustomAlert("يرجى اختيار عرض فيبوكس.");
+        return;
+      }
+      subDetails += `💎 عرض فيبوكس: ${vbucksSelectValue}
+`;
+    }
+
+    if (["vbucks", "rareBundles", "shopBundles"].includes(fortniteSelectValue)) {
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const accountType = document.getElementById("accountType").value;
+      const deviceType = document.getElementById("deviceType").value;
+
+      
+    document.getElementById("email").style.border = email ? "" : "2px solid red";
+    document.getElementById("password").style.border = password ? "" : "2px solid red";
+    document.getElementById("accountType").style.border = accountType ? "" : "2px solid red";
+    document.getElementById("deviceType").style.border = deviceType ? "" : "2px solid red";
+    if (!email || !password || !accountType || !deviceType) {
+
+        showCustomAlert("يرجى تعبئة جميع بيانات الحساب المطلوبة.");
+        return;
       }
 
-      if (["vbucks", "rareBundles", "shopBundles"].includes(fortniteSelectValue)) {
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("password").value.trim();
-        const accountType = document.getElementById("accountType").value;
-        const deviceType = document.getElementById("deviceType").value;
-
-        if (!email || !password || !accountType || !deviceType) {
-          alert("يرجى تعبئة جميع بيانات الحساب المطلوبة.");
-          return;
-        }
-
-        subDetails += `📧 الإيميل: ${email}\n🔒 الباسورد: ${password}\n🎮 نوع الحساب: ${accountType}\n🖥️ نوع الجهاز: ${deviceType}\n`;
-      }
+      subDetails += `📧 الإيميل: ${email}
+🔒 الباسورد: ${password}
+🎮 نوع الحساب: ${accountType}
+🖥️ نوع الجهاز: ${deviceType}
+`;
     }
 
     const token = "7540279666:AAEqscKKhhO2L3lrQkcXxTxht7yjuWEeVVU";
     const chatId = "54775896";
 
-    const messageText = `📥 طلب جديد:\n\n📲 جهة التواصل: ${platform}\n📝 معلومات التواصل: ${contactInfo}\n🕹️ القسم الرئيسي: ${mainCategory}\n${subDetails}`;
+    
+  let notes = "";
 
-    // إرسال الطلب إلى تيليجرام
+  if (["vbucks", "shopBundles", "rareBundles"].includes(fortniteSelectValue)) {
+    const notesInput = document.getElementById("accountNotes");
+    if (notesInput && notesInput.offsetParent !== null) {
+      notes = notesInput.value.trim();
+    }
+  } else if (fortniteSelectValue === "itemshop") {
+    const notesInput = document.getElementById("itemshopNotes");
+    if (notesInput && notesInput.offsetParent !== null) {
+      notes = notesInput.value.trim();
+    }
+  }
+
+  subDetails += `🗒️ ملاحظات: ${notes && notes.trim() !== "" ? notes : "لا يوجد"}\n`;
+
+const messageText = `📥 طلب جديد (فورت نايت):
+
+:🆔 رقم الطلب
+${orderId}
+📲 جهة التواصل: ${platform}
+📝 معلومات التواصل: ${contactInfo}
+${subDetails}`;
+
     await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
@@ -400,8 +696,6 @@ if (fortniteSelectValue === "vbucks") {
       })
     });
 
-    // إرسال الصور
-    const images = document.querySelectorAll('#photosContainer img');
     let index = 1;
     for (let img of images) {
       const blob = await (await fetch(img.src)).blob();
@@ -418,6 +712,122 @@ if (fortniteSelectValue === "vbucks") {
       index++;
     }
 
-    alert("✅ تم إرسال الطلب بنجاح إلى تيليجرام");
+    
+const trimmedMessageText = messageText.split("\n").slice(1).join("\n");
+showCustomAlert(`✅ تم ارسال طلبك بنجاح<br/><br/>${trimmedMessageText}<br/>📌 ملاحظة: انسخ رقم الطلب للمراجعة`, orderId);
+
   }
+
+function showFloatingNotice(message) {
+  const notice = document.getElementById("floatingNotice");
+  notice.innerText = message;
+  notice.style.display = "block";
+  setTimeout(() => {
+    notice.style.display = "none";
+  }, 3000);
+}
 </script>
+
+
+<!-- نافذة تنبيه مخصصة -->
+<div id="customAlert" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-height: 80vh; overflow-y: auto;
+  background-color: white; border: 2px solid #27ae60; padding: 20px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; text-align: center;">
+  <p id="customAlertMessage" style="margin-bottom: 20px; font-size: 18px; line-height: 1.8;">📷 يرجى الضغط على زر "فتح الكاميرا" أولاً لتفعيل التصوير.</p>
+  
+  <!-- زر نسخ رقم الطلب (يظهر فقط في حالة إرسال الطلب بنجاح) -->
+  <div id="copyOrderSection" style="display: none; margin-bottom: 10px;">
+    <input id="orderIdToCopy" type="text" readonly style="padding: 6px 12px; width: 200px; font-size: 16px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+    <br/>
+    <button onclick="copyOrderId()" style="background-color: #3498db; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 8px; margin-bottom: 10px;">📋 نسخ رقم الطلب</button>
+  </div>
+
+  <button onclick="document.getElementById('customAlert').style.display='none'; location.reload();" style="background-color: #27ae60; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 8px;">حسنًا</button>
+</div>
+
+<div id="customAlert" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-height: 80vh; overflow-y: auto;
+  background-color: white; border: 2px solid #27ae60; padding: 20px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; text-align: center;">
+  <p style="margin-bottom: 20px; font-size: 18px;">📷 يرجى الضغط على زر "فتح الكاميرا" أولاً لتفعيل التصوير.</p>
+  <button onclick="document.getElementById('customAlert').style.display='none'; location.reload();" style="background-color: #27ae60; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 8px;">حسنًا</button>
+</div>
+
+
+
+<script>
+function showCustomAlert(message, orderId = null, autoClose = false) {
+  const alertBox = document.getElementById('customAlert');
+  const messageParagraph = document.getElementById('customAlertMessage');
+  const copySection = document.getElementById('copyOrderSection');
+  const orderInput = document.getElementById('orderIdToCopy');
+
+  
+  const lines = message.split('\n');
+  messageParagraph.innerHTML = lines.map((line, index) => {
+    const margin = index === 0 ? '4px' : '12px';
+    return `<div style="margin-bottom: ${margin};">${line}</div>`;
+  }).join('');
+    
+
+  if (orderId) {
+    copySection.style.display = 'block';
+    orderInput.value = orderId;
+  } else {
+    copySection.style.display = 'none';
+    orderInput.value = '';
+  }
+
+  alertBox.style.display = 'block';
+
+  if (autoClose) {
+    setTimeout(() => {
+      alertBox.style.display = 'none';
+    }, 3000);
+  }
+}
+
+
+function copyOrderId() {
+  const orderInput = document.getElementById("orderIdToCopy");
+  orderInput.select();
+  orderInput.setSelectionRange(0, 99999); // للأجهزة المحمولة
+  document.execCommand("copy");
+
+  // عرض إشعار مؤقت
+  const copiedNotice = document.createElement("div");
+  copiedNotice.innerText = "✅ تم نسخ رقم الطلب";
+  copiedNotice.style.position = "fixed";
+  copiedNotice.style.top = "20px";
+  copiedNotice.style.left = "50%";
+  copiedNotice.style.transform = "translateX(-50%)";
+  copiedNotice.style.backgroundColor = "#27ae60";
+  copiedNotice.style.color = "white";
+  copiedNotice.style.padding = "10px 20px";
+  copiedNotice.style.borderRadius = "8px";
+  copiedNotice.style.fontSize = "16px";
+  copiedNotice.style.zIndex = "10000";
+  copiedNotice.style.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
+  document.body.appendChild(copiedNotice);
+
+  setTimeout(() => {
+    copiedNotice.remove();
+  }, 2000);
+}
+
+
+function showFloatingNotice(message) {
+  const notice = document.getElementById("floatingNotice");
+  notice.innerText = message;
+  notice.style.display = "block";
+  setTimeout(() => {
+    notice.style.display = "none";
+  }, 3000);
+}
+</script>
+
+
+
+<!-- إشعار عائم مؤقت -->
+<div id="floatingNotice" style="display:none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+background-color: #27ae60; color: white; padding: 10px 20px; border-radius: 8px; font-size: 16px; z-index: 10000;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);"></div>
+
+</body></html>
