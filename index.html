@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mero14store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>طلب خدمات فورت نايت</h1>
+
+    <form id="orderForm">
+      <label for="username">اسم المستخدم:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="service">اختر الخدمة:</label>
+      <select id="service" name="service" required>
+        <option value="">-- اختر --</option>
+        <option value="vbucks">في-بوكس</option>
+        <option value="battlepass">باتل باس</option>
+        <option value="account">شراء حساب</option>
+      </select>
+
+      <label for="notes">ملاحظات:</label>
+      <textarea id="notes" name="notes"></textarea>
+
+      <button type="button" id="openCamera">📷 تصوير الرصيد</button>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+
+    <div id="cameraContainer" class="hidden">
+      <video id="video" autoplay playsinline></video>
+      <button id="capture">📸 التقط الصورة</button>
+      <canvas id="canvas" class="hidden"></canvas>
+    </div>
+  </div>
+</body>
+</html>
