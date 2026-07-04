@@ -384,6 +384,8 @@ def build_after_charge_keyboard(last_product_callback=None):
     keyboard = []
     if last_product_callback:
         keyboard.append([InlineKeyboardButton("🔙 العودة لإكمال الشراء", callback_data=last_product_callback)])
+    # ✅ زر جديد: تصفح المنتجات (يعرض جميع الأقسام كالقائمة الرئيسية)
+    keyboard.append([InlineKeyboardButton("🛒 تصفح المنتجات", callback_data="products")])
     keyboard.append([InlineKeyboardButton("💰 العودة لمحفظتي", callback_data="my_wallet")])
     keyboard.append([InlineKeyboardButton("🏠 القائمة الرئيسية", callback_data="main_menu")])
     return InlineKeyboardMarkup(keyboard)
